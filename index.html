@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html lang='pl'>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>TETRIS - by Maciej Łaszewski</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='Gra typu Tetris napisana przez MLproject'>
+    
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    
+
+    <script src='tetromino.js' defer></script>
+
+    <script src='app.js' defer></script>
+
+</head>
+
+<body>
+
+    <header class='header'>
+        <h1>TETRISSSSSS</h1>
+    </header>
+
+    <main class='container'>
+            <div class='hero'>
+                <div class='menu' id='menu'>
+                    <h2>Witaj w TETRIS!</h2>
+                    <p>Aby zacząć grę naciśnij przycisk!</p>
+
+                    <button id='start-game'class='menu--btn'>Start</button>
+                    <button id='stats' class='menu--btn'>Statystyki</button>
+                </div>
+
+                <canvas id='tetris' width='480' height='720'></canvas>
+
+            </div>
+            <div class='controls'>
+                <div class='controls--top'>
+                    <button id='change' class='control'>CH</button>
+                </div>
+                <div class='controls--bottom'>
+                    <button id='rotate' class='control'>R</button>
+                    <button id='move-left' class='control'><</button>
+                    <button id='move-right' class='control'>></button>
+                    <button id='move-down' class='control'>\/</button>
+                </div>
+            </div>
+
+        <aside class='sidebar'>
+            <div class='next-tetro'>
+                <canvas id='next-tetronimo' width='240' height='240'></canvas>
+            </div>
+            <p class='score'>Score: <span id='score'>0</span></p>
+        </aside>
+
+    </main>
+
+</body>
+
+</html>
